@@ -1,0 +1,26 @@
+.graph-query-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 93%;
+  width: 100%;
+
+  background: -webkit-linear-gradient(bottom right,#216e93,#21648a,#1f5881,#172d5b,#191c51);
+}
+
+.graph {
+  height: 700px;
+  width: 70%;
+  
+  opacity: .93;
+  background-color: #172d5b;
+}
+
+.query-module {
+  height: 700px;
+  width: 20%;
+
+  opacity: .93;
+  background-color: #172d5b;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../stylesheets/splash.css'
+
 class CoinIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -11,14 +13,14 @@ class CoinIndex extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
+    fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=5&page=1&sparkline=false")
       .then(res => res.json())
       .then(
         (result) => {
           console.log(result);
           this.setState({
             isLoaded: true,
-            items: result.items
+            items: result
           });
         },
         (error) => {
@@ -38,13 +40,12 @@ class CoinIndex extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <ul>
-          {/* {items.map(item => (
-            <li key={item.name}>
-              {item.name} {item.price}
-            </li>
-          ))} */}
-        </ul>
+        <>
+          <div className="graph-query-wrapper">
+            <div className="graph"></div>
+            <div className="query-module"></div>
+          </div>
+        </>
       );
     }
   }
