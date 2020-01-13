@@ -51,9 +51,13 @@ class CoinIndex extends React.Component {
   }  
 
   update(field) {
+    let formFields = {...this.state.formFields};
+
     return e => {
+      formFields[field] = !formFields[field];
+
       this.setState({
-        [field]: e.currentTarget.value
+        formFields
       });
     };
   }
@@ -72,6 +76,8 @@ class CoinIndex extends React.Component {
     this.setState({
       data: tempData
     })
+
+    console.log(this.state)
   }
 
   // createData(field) {
@@ -105,8 +111,8 @@ class CoinIndex extends React.Component {
 
   render() {
     const { error, isLoaded, items, data } = this.state;
-    let ex = this.createData('current_price');
-    let key = ['high_24h', 'low_24h'];
+    // let ex = this.createData('current_price');
+    // let key = ['high_24h', 'low_24h'];
 
     // console.log(ex);
     // console.log(key)
@@ -123,30 +129,30 @@ class CoinIndex extends React.Component {
                 data={items}
                 keys={data}
                 indexBy="name"
-                width={600}
+                width={900}
                 height={600}
-                margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+                margin={{ top: 50, right: 130, bottom: 60, left: 60 }}
                 padding={0.3}
                 groupMode="grouped"
-                colors={{ scheme: "nivo" }}
+                colors={{ scheme: "set3" }}
                 borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
                 axisTop={null}
                 axisRight={null}
                 axisBottom={{
-                  tickSize: 5,
+                  tickSize: 10,
                   tickPadding: 5,
-                  tickRotation: 0,
-                  legend: "name",
+                  tickRotation: 35,
+                  legend: "Coin",
                   legendPosition: "middle",
-                  legendOffset: 32
+                  legendOffset: 50
                 }}
                 axisLeft={{
-                  tickSize: 5,
-                  tickPadding: 5,
-                  tickRotation: 0,
-                  legend: "coin",
+                  tickSize: 0,
+                  tickPadding: 6,
+                  tickRotation: 35,
+                  legend: "Volume",
                   legendPosition: "middle",
-                  legendOffset: -40
+                  legendOffset: -50
                 }}
                 labelSkipWidth={12}
                 labelSkipHeight={12}
