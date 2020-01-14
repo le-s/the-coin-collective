@@ -3,3 +3,14 @@ html, body, #root, .App {
   margin: 0;
 }
 
+h1 {
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+input:focus {outline:none;}
+
+
