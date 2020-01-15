@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/the-coin-collective/static/css/main.4aae4f85.chunk.css",
+    "main.js": "/the-coin-collective/static/js/main.069cb852.chunk.js",
+    "main.js.map": "/the-coin-collective/static/js/main.069cb852.chunk.js.map",
+    "runtime-main.js": "/the-coin-collective/static/js/runtime-main.3d11dbad.js",
+    "runtime-main.js.map": "/the-coin-collective/static/js/runtime-main.3d11dbad.js.map",
+    "static/js/2.4e0e2566.chunk.js": "/the-coin-collective/static/js/2.4e0e2566.chunk.js",
+    "static/js/2.4e0e2566.chunk.js.map": "/the-coin-collective/static/js/2.4e0e2566.chunk.js.map",
+    "index.html": "/the-coin-collective/index.html",
+    "precache-manifest.6864d1e85d429e339f9af5aa098fb9d0.js": "/the-coin-collective/precache-manifest.6864d1e85d429e339f9af5aa098fb9d0.js",
+    "service-worker.js": "/the-coin-collective/service-worker.js",
+    "static/css/main.4aae4f85.chunk.css.map": "/the-coin-collective/static/css/main.4aae4f85.chunk.css.map",
+    "static/js/2.4e0e2566.chunk.js.LICENSE": "/the-coin-collective/static/js/2.4e0e2566.chunk.js.LICENSE",
+    "static/media/navbar.css": "/the-coin-collective/static/media/portfolio.2eee1999.ico"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d11dbad.js",
+    "static/js/2.4e0e2566.chunk.js",
+    "static/css/main.4aae4f85.chunk.css",
+    "static/js/main.069cb852.chunk.js"
+  ]
+}
