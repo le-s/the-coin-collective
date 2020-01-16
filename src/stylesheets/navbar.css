@@ -10,9 +10,25 @@
   background: #181745;
 }
 
-.navbar h1 {
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 57px;
+  padding-left: 40px;
+}
+
+.title-container h1 {
   margin: 0;
-  width: 35%;
+  width: 45%;
+  text-align: start;
+}
+
+.title-container h4 {
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 100;
+  margin: 0;
 }
 
 .social-container {

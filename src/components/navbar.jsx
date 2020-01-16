@@ -6,7 +6,10 @@ class Navbar extends React.Component {
     return (
       <>
         <div className="navbar">
-          <h1>The Coin Collective</h1>
+          <div className="title-container">
+            <h1>The Coin Collective</h1>
+            <h4>Powered by Coingecko API</h4>
+          </div>
           <div className="social-container">
             <div className="portfolio">
               <div className="linkedin-align">
